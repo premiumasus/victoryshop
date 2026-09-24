@@ -92,8 +92,27 @@
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
         .btn-back-wrapper { margin-bottom: 25px; }
-        .btn-back { background: rgba(255, 255, 255, 0.08); color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 700; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        .btn-back:hover { color: #000; background: #fff; border-color: #fff; box-shadow: 0 0 20px rgba(255,255,255,0.6); transform: translateX(-4px); }
+        .btn-back { 
+            background: rgba(255, 255, 255, 0.08); 
+            color: #fff; 
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-weight: 700; 
+            transition: 0.3s; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .btn-back:hover { 
+            color: #000; 
+            background: #fff; 
+            border-color: #fff; 
+            box-shadow: 0 0 20px rgba(255,255,255,0.6);
+            transform: translateX(-4px);
+        }
 
         .single-product-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 30px; backdrop-filter: blur(15px); box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
         .product-img-box { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: center; background: #000; max-height: 350px; }
@@ -103,10 +122,37 @@
         .product-desc { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; border-bottom: 1px dashed var(--border-color); padding-bottom: 15px; }
 
         .options-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
-        .option-btn { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); color: #fff; padding: 12px; border-radius: 10px; cursor: pointer; text-align: center; font-weight: 600; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+        .option-btn { 
+            background: rgba(255, 255, 255, 0.05); 
+            border: 1px solid var(--border-color); 
+            color: #fff; 
+            padding: 12px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            text-align: center; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            gap: 6px; 
+        }
         .option-btn .plan-price-text { font-size: 1.1rem; font-weight: 800; color: #00d2ff; }
-        .option-btn .stock-badge-info { font-size: 0.8rem; padding: 2px 8px; border-radius: 12px; font-weight: 700; background: rgba(0, 255, 136, 0.15); color: #00ff88; border: 1px solid rgba(0, 255, 136, 0.4); }
-        .option-btn.disabled .stock-badge-info { background: rgba(255, 68, 68, 0.15); color: #ff4444; border-color: rgba(255, 68, 68, 0.4); }
+        .option-btn .stock-badge-info { 
+            font-size: 0.8rem; 
+            padding: 2px 8px; 
+            border-radius: 12px; 
+            font-weight: 700;
+            background: rgba(0, 255, 136, 0.15);
+            color: #00ff88;
+            border: 1px solid rgba(0, 255, 136, 0.4);
+        }
+        .option-btn.disabled .stock-badge-info {
+            background: rgba(255, 68, 68, 0.15);
+            color: #ff4444;
+            border-color: rgba(255, 68, 68, 0.4);
+        }
         .option-btn.active { background: #fff; color: #000; border-color: #fff; box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); }
         .option-btn.active .plan-price-text { color: #000; }
         .option-btn.disabled { opacity: 0.5; cursor: not-allowed; border-color: #ff4444; }
@@ -145,8 +191,27 @@
 
         .admin-plan-row { display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start; background: rgba(255,255,255,0.03); padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); }
 
-        .product-entry-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; position: relative; }
-        .btn-remove-product-entry { position: absolute; top: 15px; right: 15px; background: #ff4444; color: #fff; border: none; border-radius: 6px; padding: 6px 12px; cursor: pointer; font-size: 0.85rem; font-weight: bold; }
+        .product-entry-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .btn-remove-product-entry {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff4444;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
 
         .payment-methods-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
         .payment-card { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); border-radius: 10px; padding: 15px 10px; text-align: center; cursor: pointer; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 8px; }
@@ -176,11 +241,48 @@
         .qr-wrapper { text-align: center; margin: 15px 0; background: #fff; padding: 15px; border-radius: 12px; display: inline-block; }
         .qr-wrapper img { width: 180px; height: 180px; display: block; }
 
-        .key-box { background: #000; border: 1px dashed #00ff88; padding: 12px; border-radius: 8px; text-align: center; font-family: 'Orbitron', monospace; font-size: 1.1rem; letter-spacing: 1px; color: #00ff88; margin: 10px 0; word-break: break-all; text-shadow: 0 0 8px rgba(0, 255, 136, 0.5); user-select: text !important; -webkit-user-select: text !important; cursor: pointer; transition: 0.2s; }
+        .key-box { 
+            background: #000; 
+            border: 1px dashed #00ff88; 
+            padding: 12px; 
+            border-radius: 8px; 
+            text-align: center; 
+            font-family: 'Orbitron', monospace; 
+            font-size: 1.1rem; 
+            letter-spacing: 1px; 
+            color: #00ff88; 
+            margin: 10px 0; 
+            word-break: break-all; 
+            text-shadow: 0 0 8px rgba(0, 255, 136, 0.5); 
+            user-select: text !important; 
+            -webkit-user-select: text !important;
+            cursor: pointer;
+            transition: 0.2s;
+        }
         .key-box:hover { background: rgba(0, 255, 136, 0.05); }
 
-        .btn-copy-key { width: 100%; background: rgba(0, 255, 136, 0.15); color: #00ff88; border: 1px solid #00ff88; padding: 10px; font-weight: 800; border-radius: 8px; cursor: pointer; font-size: 0.95rem; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 15px; }
-        .btn-copy-key:hover { background: #00ff88; color: #000; box-shadow: 0 0 15px rgba(0, 255, 136, 0.5); }
+        .btn-copy-key {
+            width: 100%;
+            background: rgba(0, 255, 136, 0.15);
+            color: #00ff88;
+            border: 1px solid #00ff88;
+            padding: 10px;
+            font-weight: 800;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .btn-copy-key:hover {
+            background: #00ff88;
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+        }
 
         footer { background: #040406; border-top: 1px solid var(--border-color); padding: 30px 20px; text-align: center; color: var(--text-secondary); font-size: 0.9rem; }
         @keyframes pulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.1); opacity: 0.8; text-shadow: 0 0 15px #fff; } 100% { transform: scale(1); opacity: 1; } }
@@ -198,7 +300,6 @@
 
     <canvas id="particles-js"></canvas>
 
-    <!-- NAVBAR -->
     <nav>
         <div class="logo" id="nav-logo">
             <i class="fa-solid fa-crown"></i> VICTORY
@@ -224,13 +325,11 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section class="hero" id="hero-section">
         <h1>VICTORY STORE</h1>
         <p>ศูนย์รวมสคริปต์เกมพรีเมียมอันดับ #1 ปลอดภัย ตรวจจับไม่ได้ 100%</p>
     </section>
 
-    <!-- STORE FRONT VIEW -->
     <div class="container" id="store-front-view">
         <div class="category-container" id="category-filter-list"></div>
         
@@ -246,7 +345,6 @@
         <div class="product-grid" id="product-list"></div>
     </div>
 
-    <!-- PRODUCT DETAIL VIEW -->
     <div class="container" id="product-detail-view">
         <div class="btn-back-wrapper">
             <button class="btn-back" id="btn-back-to-store">
@@ -286,7 +384,6 @@
         </div>
     </div>
 
-    <!-- ADMIN PANEL VIEW -->
     <div class="container" id="admin-view">
         <div class="admin-header">
             <div class="admin-title">
@@ -299,7 +396,6 @@
 
         <div class="admin-nav-tabs">
             <button class="admin-tab-btn active" id="tab-admin-users">Log ผู้ใช้ทั้งหมด</button>
-            <button class="admin-tab-btn" id="tab-admin-new-admin">เพิ่ม Admin คนใหม่</button>
             <button class="admin-tab-btn" id="tab-admin-products">จัดการสินค้า & หมวดหมู่</button>
             <button class="admin-tab-btn" id="tab-admin-codes">สร้าง & จัดการโค้ดรับของ</button>
             <button class="admin-tab-btn" id="tab-admin-orders">Log คนที่ซื้อของ</button>
@@ -315,50 +411,11 @@
                     <tr>
                         <th>ชื่อผู้ใช้ (Username)</th>
                         <th>อีเมล</th>
-                        <th>สถานะ</th>
                         <th>จำนวนเงินคงเหลือ</th>
                         <th>จัดการระบบเงิน</th>
                     </tr>
                 </thead>
                 <tbody id="admin-user-table-body"></tbody>
-            </table>
-        </div>
-
-        <!-- NEW ADMIN SECTION -->
-        <div id="section-admin-new-admin" class="admin-card" style="display: none;">
-            <div class="admin-card-header">
-                <div class="admin-card-title"><i class="fa-solid fa-user-plus"></i> เพิ่มและจัดการ Admin คนใหม่</div>
-            </div>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
-                เลือกผู้ใช้ที่สมัครสมาชิกในระบบแล้วเพื่อแต่งตั้งให้เป็นผู้ดูแลระบบ (Admin) โดยบัญชีเริ่มต้นคือ <b>victory</b>
-            </p>
-            <form id="form-add-admin" style="margin-bottom: 30px;">
-                <div style="display: flex; gap: 15px; align-items: flex-end;">
-                    <div class="form-group" style="flex: 1; margin-bottom: 0;">
-                        <label>เลือกผู้ใช้จากระบบ (ที่สมัครสมาชิกแล้ว)</label>
-                        <select id="select-new-admin-user" class="form-input" style="background:#151520;" required>
-                            <option value="">-- เลือกผู้ใช้งาน --</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn-confirm" style="background:#00ff88; color:#000; width:220px; font-size:0.95rem;">
-                        <i class="fa-solid fa-shield-halved"></i> เพิ่มเป็น Admin
-                    </button>
-                </div>
-            </form>
-
-            <div class="admin-card-header">
-                <div class="admin-card-title"><i class="fa-solid fa-user-shield"></i> รายชื่อ Admin ทั้งหมดในระบบ</div>
-            </div>
-            <table class="admin-table">
-                <thead>
-                    <tr>
-                        <th>ชื่อผู้ใช้ (Username)</th>
-                        <th>อีเมล</th>
-                        <th>สถานะสิทธิ์</th>
-                        <th>จัดการ</th>
-                    </tr>
-                </thead>
-                <tbody id="admin-admin-table-body"></tbody>
             </table>
         </div>
 
@@ -380,14 +437,13 @@
             <hr style="border:0; border-top:1px dashed var(--border-color); margin:25px 0;">
 
             <div class="admin-card-header">
-                <div class="admin-card-title"><i class="fa-solid fa-box-open"></i> เพิ่มสินค้าใหม่เข้าร้านค้า (สามารถเพิ่มได้หลายรายการ)</div>
+                <div class="admin-card-title"><i class="fa-solid fa-box-open"></i> เพิ่มสินค้าใหม่เข้าร้านค้า</div>
                 <button type="button" class="btn-confirm" id="btn-add-more-product-entry" style="width: auto; padding: 8px 16px; font-size: 0.85rem; background: #00d2ff; color: #000;">
                     <i class="fa-solid fa-plus"></i> เพิ่มสินค้าอีกรายการ
                 </button>
             </div>
             <form id="form-add-product" style="margin-bottom: 30px;">
                 <div id="multi-product-container"></div>
-
                 <button type="submit" class="btn-confirm" style="background:#00ff88; color:#000; width:auto; padding:12px 30px; font-size: 1.05rem; margin-top:10px;">
                     <i class="fa-solid fa-save"></i> บันทึกและเพิ่มสินค้าทั้งหมด
                 </button>
@@ -419,7 +475,7 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
                     <div class="form-group">
                         <label>ชื่อโค้ด (Code String)</label>
-                        <input type="text" id="add-code-string" class="form-input" placeholder="เช่น FREE50, VIC-GIFT-2026" required>
+                        <input type="text" id="add-code-string" class="form-input" placeholder="เช่น FREE50" required>
                     </div>
                     <div class="form-group">
                         <label>ประเภทของรางวัล</label>
@@ -477,22 +533,6 @@
                 </thead>
                 <tbody id="admin-order-table-body"></tbody>
             </table>
-        </div>
-    </div>
-
-    <!-- MODALS -->
-    <div class="modal" id="customConfirmModal">
-        <div class="modal-content" style="text-align: center; max-width: 380px;">
-            <span class="close-btn closeModal">&times;</span>
-            <div style="font-size: 3rem; color: #ffd700; margin-bottom: 10px;">
-                <i class="fa-solid fa-circle-question"></i>
-            </div>
-            <h3 class="modal-title" id="confirm-modal-title" style="margin-bottom: 8px;">ยืนยันการทำรายการ</h3>
-            <p id="confirm-modal-msg" style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 20px;"></p>
-            <div style="display: flex; gap: 10px;">
-                <button class="btn-confirm" id="btn-confirm-no" style="background: rgba(255,255,255,0.1); color: #fff;">ยกเลิก</button>
-                <button class="btn-confirm" id="btn-confirm-yes" style="background: #ff4444; color: #fff;">ยืนยัน</button>
-            </div>
         </div>
     </div>
 
@@ -698,30 +738,6 @@
         </div>
     </div>
 
-    <div class="modal" id="insufficientBalanceModal">
-        <div class="modal-content" style="text-align: center;">
-            <span class="close-btn closeModal">&times;</span>
-            <div style="font-size: 3.5rem; color: #ff4444; margin-bottom: 15px; text-shadow: 0 0 20px #ff4444;">
-                <i class="fa-solid fa-triangle-exclamation"></i>
-            </div>
-            <h3 class="modal-title" style="margin-bottom: 10px; color: #ff4444;">ยอดเงินไม่เพียงพอ!</h3>
-            <p style="color: #fff; font-size: 0.95rem; margin-bottom: 10px;" id="insufficient-msg-main">
-                ยอดเงินเครดิตของคุณไม่เพียงพอ
-            </p>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 20px;">
-                กรุณาเติมเงินก่อนทำรายการสั่งซื้อ
-            </p>
-            <div style="display: flex; gap: 10px;">
-                <button class="btn-confirm closeModal" style="background: rgba(255,255,255,0.1); color: #fff;">
-                    ยกเลิก
-                </button>
-                <button class="btn-confirm" id="btn-go-topup" style="background: #fff; color: #000;">
-                    <i class="fa-solid fa-wallet"></i> ไปหน้าเติมเงิน
-                </button>
-            </div>
-        </div>
-    </div>
-
     <div class="modal" id="buyModal">
         <div class="modal-content">
             <span class="close-btn closeModal">&times;</span>
@@ -823,80 +839,60 @@
         <p>&copy; 2026 VICTORY STORE. Official Script Platform.</p>
     </footer>
 
-    <!-- JAVASCRIPT LOGIC -->
     <script>
-        // --- PARTICLE BACKGROUND ANIMATION ---
-        const canvas = document.getElementById('particles-js');
-        const ctx = canvas.getContext('2d');
-        let particlesArray = [];
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = (Math.random() - 0.5) * 0.5;
-                this.speedY = (Math.random() - 0.5) * 0.5;
-                this.alpha = Math.random() * 0.5 + 0.2;
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-                if (this.x > canvas.width) this.x = 0;
-                else if (this.x < 0) this.x = canvas.width;
-                if (this.y > canvas.height) this.y = 0;
-                else if (this.y < 0) this.y = canvas.height;
-            }
-            draw() {
-                ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function initParticles() {
-            particlesArray = [];
-            let numberOfParticles = (canvas.width * canvas.height) / 9000;
-            for (let i = 0; i < numberOfParticles; i++) {
-                particlesArray.push(new Particle());
-            }
-        }
-
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            let gradient = ctx.createRadialGradient(canvas.width/2, canvas.height/2, 10, canvas.width/2, canvas.height/2, Math.max(canvas.width, canvas.height)/2);
-            gradient.addColorStop(0, '#111116');
-            gradient.addColorStop(1, '#050508');
-            ctx.fillStyle = gradient;
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            for (let i = 0; i < particlesArray.length; i++) {
-                particlesArray[i].update();
-                particlesArray[i].draw();
-            }
-            requestAnimationFrame(animateParticles);
-        }
-
-        initParticles();
-        animateParticles();
-
-        // --- STORE & APP LOGIC ---
         let currentUser = null;
-        let registeredUsers = []; 
-        let categories = []; 
+        let registeredUsers = [
+            {
+                username: 'victory',
+                email: 'admin@victory.store',
+                password: 'P2LjNI46BBAtYTWuFXjqEVYZ2VQgP31MeWzK8YtS2QIK4IKU7l',
+                balance: 999999,
+                isAdmin: true
+            }
+        ]; 
+
+        let categories = [
+            { id: 'blox-fruits', name: 'Blox Fruits', icon: 'fa-ship' },
+            { id: 'king-legacy', name: 'King Legacy', icon: 'fa-crown' },
+            { id: 'executors', name: 'Executors / ตัวรัน', icon: 'fa-terminal' }
+        ];
 
         const defaultPlaceholderImg = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200"><rect width="100%" height="100%" fill="%23121218"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23a0a0ab" font-family="sans-serif" font-size="16">VICTORY SCRIPT</text></svg>';
 
-        let storeProducts = []; 
-        let redeemCodes = [];
+        let storeProducts = [
+            { 
+                id: 1, 
+                category: 'blox-fruits', 
+                title: 'VICTORY SCRIPT (Blox Fruits)', 
+                img: defaultPlaceholderImg, 
+                desc: 'สุดยอดสคริปต์ Blox Fruits ฟาร์มออโต้ 1-2550 ตัน ฟาร์มวัตถุดิบ ล่าค่าหัว ล่าเจ้าทะเล ไร้รอยต่อ เสถียรที่สุด', 
+                tag: 'ขายดี #1',
+                plans: [
+                    { name: '1 วัน (Day Pass)', price: 150, stock: ['VIC-BF-1DAY-99812', 'VIC-BF-1DAY-99813', 'VIC-BF-1DAY-99814'] },
+                    { name: '7 วัน (Weekly Pass)', price: 350, stock: ['VIC-BF-7DAY-48102', 'VIC-BF-7DAY-48103'] },
+                    { name: '30 วัน (Monthly Pass)', price: 750, stock: ['VIC-BF-30DAY-77123'] },
+                    { name: 'ถาวร (Lifetime)', price: 1500, stock: ['VIC-BF-LIFE-99999'] }
+                ]
+            },
+            { 
+                id: 2, 
+                category: 'king-legacy', 
+                title: 'VICTORY - KING LEGACY', 
+                img: defaultPlaceholderImg, 
+                desc: 'สคริปต์ King Legacy ฟาร์มเลเวลออโต้ ฟาร์มดันเจี้ยน ออโต้ดัน Hydra/Sea King ครบจบในตัวเดียว', 
+                tag: 'ยอดฮิต',
+                plans: [
+                    { name: '7 วัน', price: 160, stock: ['KL-SCRIPT-KEY-7D-8821'] },
+                    { name: 'ถาวร (Lifetime)', price: 600, stock: ['KL-SCRIPT-KEY-PERM-1092'] }
+                ]
+            }
+        ];
+
+        let redeemCodes = [
+            { id: 1, code: 'FREE50', type: 'balance', value: '50', limit: 20, usedCount: 0, usedBy: [] },
+            { id: 2, code: 'VIPKEY', type: 'item', value: 'VIP-FREE-SCRIPT-PASS-8899', limit: 10, usedCount: 0, usedBy: [] }
+        ];
+
         let purchaseLogs = [];
 
         let currentActiveProduct = null;
@@ -916,7 +912,6 @@
         const detailImg = document.getElementById('detail-img');
         const displayPrice = document.getElementById('display-price');
         const detailOptionsGrid = document.getElementById('detail-options-grid');
-        
         const btnBackToStore = document.getElementById('btn-back-to-store');
         
         const authModal = document.getElementById('authModal');
@@ -930,8 +925,6 @@
         const successModal = document.getElementById('successModal');
         const topupModal = document.getElementById('topupModal');
         const redeemModal = document.getElementById('redeemModal');
-        const insufficientBalanceModal = document.getElementById('insufficientBalanceModal');
-        const customConfirmModal = document.getElementById('customConfirmModal');
 
         const btnSubmitBuy = document.getElementById('btn-submit-buy');
         const btnProceedPayment = document.getElementById('btn-proceed-payment');
@@ -944,7 +937,6 @@
         const modalPlanName = document.getElementById('modal-plan-name');
         const modalPlanPrice = document.getElementById('modal-plan-price');
         const qrModalPrice = document.getElementById('qr-modal-price');
-        const qrImg = document.getElementById('qr-img');
         const licenseKeyDisplay = document.getElementById('license-key-display');
         const successProductName = document.getElementById('success-product-name');
         const successPlanName = document.getElementById('success-plan-name');
@@ -969,30 +961,6 @@
             document.getElementById('status-title').textContent = title;
             document.getElementById('status-msg').textContent = message;
             statusModal.style.display = 'flex';
-        }
-
-        function showCustomConfirm(title, message, onConfirm) {
-            document.getElementById('confirm-modal-title').textContent = title;
-            document.getElementById('confirm-modal-msg').textContent = message;
-            customConfirmModal.style.display = 'flex';
-
-            const yesBtn = document.getElementById('btn-confirm-yes');
-            const noBtn = document.getElementById('btn-confirm-no');
-
-            const cleanUp = () => {
-                customConfirmModal.style.display = 'none';
-                yesBtn.onclick = null;
-                noBtn.onclick = null;
-            };
-
-            yesBtn.onclick = () => {
-                cleanUp();
-                if (onConfirm) onConfirm();
-            };
-
-            noBtn.onclick = () => {
-                cleanUp();
-            };
         }
 
         function renderCategories() {
@@ -1185,76 +1153,10 @@
             renderProducts();
         });
 
-        function loadUserData() {
-            const savedCategories = localStorage.getItem('victory_categories');
-            if (savedCategories) categories = JSON.parse(savedCategories);
-
-            const savedUsersList = localStorage.getItem('victory_registered_users');
-            if (savedUsersList) {
-                registeredUsers = JSON.parse(savedUsersList);
-            }
-
-            const defaultAdmin = {
-                username: 'victory',
-                email: 'admin@victory.store',
-                password: 'P2LjNI46BBAtYTWuFXjqEVYZ2VQgP31MeWzK8YtS2QIK4IKU7l',
-                balance: 0,
-                isAdmin: true
-            };
-
-            const adminIndex = registeredUsers.findIndex(u => u.username.toLowerCase() === 'victory');
-            if (adminIndex === -1) {
-                registeredUsers.push(defaultAdmin);
-            } else {
-                registeredUsers[adminIndex].password = 'P2LjNI46BBAtYTWuFXjqEVYZ2VQgP31MeWzK8YtS2QIK4IKU7l';
-                registeredUsers[adminIndex].isAdmin = true;
-            }
-
-            const savedProducts = localStorage.getItem('victory_products');
-            if (savedProducts) {
-                let parsed = JSON.parse(savedProducts);
-                parsed.forEach(p => {
-                    if (p.plans) {
-                        p.plans.forEach(pl => {
-                            if (!Array.isArray(pl.stock)) {
-                                pl.stock = pl.content ? pl.content.split('\n').filter(s => s.trim() !== '') : [];
-                            }
-                        });
-                    }
-                });
-                storeProducts = parsed;
-            }
-
-            const savedCodes = localStorage.getItem('victory_redeem_codes');
-            if (savedCodes) redeemCodes = JSON.parse(savedCodes);
-
-            const savedOrders = localStorage.getItem('victory_purchase_logs');
-            if (savedOrders) purchaseLogs = JSON.parse(savedOrders);
-
-            const savedActiveUser = localStorage.getItem('victory_active_user');
-            if (savedActiveUser) {
-                currentUser = JSON.parse(savedActiveUser);
-                updateUIState();
-            }
-
+        function initApp() {
             renderCategories();
             renderProducts();
             initMultiProductForm();
-            renderAdminPanel();
-        }
-
-        function saveUserData() {
-            if (currentUser) {
-                localStorage.setItem('victory_active_user', JSON.stringify(currentUser));
-                const index = registeredUsers.findIndex(u => u.username === currentUser.username);
-                if (index !== -1) registeredUsers[index] = currentUser;
-            }
-            localStorage.setItem('victory_categories', JSON.stringify(categories));
-            localStorage.setItem('victory_registered_users', JSON.stringify(registeredUsers));
-            localStorage.setItem('victory_products', JSON.stringify(storeProducts));
-            localStorage.setItem('victory_redeem_codes', JSON.stringify(redeemCodes));
-            localStorage.setItem('victory_purchase_logs', JSON.stringify(purchaseLogs));
-            updateUIState();
             renderAdminPanel();
         }
 
@@ -1265,8 +1167,7 @@
                 document.getElementById('nav-username').textContent = currentUser.username;
                 document.getElementById('nav-user-balance').textContent = currentUser.balance.toLocaleString();
 
-                const isUserAdmin = registeredUsers.find(u => u.username.toLowerCase() === currentUser.username.toLowerCase() && u.isAdmin);
-                if (isUserAdmin || currentUser.username.toLowerCase() === 'victory') {
+                if (currentUser.username === 'victory' || currentUser.isAdmin) {
                     btnAdminPanel.style.display = 'flex';
                 } else {
                     btnAdminPanel.style.display = 'none';
@@ -1318,7 +1219,7 @@
 
             const newUser = { username, email, password: pass, balance: 0, isAdmin: false };
             registeredUsers.push(newUser);
-            saveUserData();
+            renderAdminPanel();
 
             registerForm.reset();
             tabLoginBtn.click();
@@ -1339,8 +1240,8 @@
                 return;
             }
 
-            currentUser = { username: userFound.username, email: userFound.email, balance: userFound.balance || 0, isAdmin: userFound.isAdmin || false };
-            saveUserData();
+            currentUser = userFound;
+            updateUIState();
             authModal.style.display = 'none';
             loginForm.reset();
             showStatusAlert('เข้าสู่ระบบสำเร็จ!', `ยินดีต้อนรับกลับมาคุณ ${currentUser.username}`);
@@ -1348,7 +1249,6 @@
 
         document.getElementById('btn-logout').addEventListener('click', () => {
             currentUser = null;
-            localStorage.removeItem('victory_active_user');
             updateUIState();
             profileModal.style.display = 'none';
             showStatusAlert('ออกจากระบบสำเร็จ', 'คุณได้ออกจากระบบเรียบร้อยแล้ว');
@@ -1358,7 +1258,7 @@
             if (currentUser) {
                 document.getElementById('profile-display-name').textContent = currentUser.username;
                 document.getElementById('profile-display-email').textContent = currentUser.email;
-                document.getElementById('profile-display-balance').textContent = `${currentUser.balance.toLocaleString()} ฿`;
+                document.getElementById('profile-display-balance').textContent = `${(currentUser.balance || 0).toLocaleString()} ฿`;
                 profileModal.style.display = 'flex';
             }
         });
@@ -1366,8 +1266,7 @@
         btnLogin.addEventListener('click', () => authModal.style.display = 'flex');
 
         btnAdminPanel.addEventListener('click', () => {
-            const isUserAdmin = currentUser && registeredUsers.find(u => u.username.toLowerCase() === currentUser.username.toLowerCase() && u.isAdmin);
-            if (currentUser && (isUserAdmin || currentUser.username.toLowerCase() === 'victory')) {
+            if (currentUser && (currentUser.username === 'victory' || currentUser.isAdmin)) {
                 heroSection.style.display = 'none';
                 storeFrontView.style.display = 'none';
                 productDetailView.style.display = 'none';
@@ -1402,30 +1301,62 @@
         });
 
         const tabAdminUsers = document.getElementById('tab-admin-users');
-        const tabAdminNewAdmin = document.getElementById('tab-admin-new-admin');
         const tabAdminProducts = document.getElementById('tab-admin-products');
         const tabAdminCodes = document.getElementById('tab-admin-codes');
         const tabAdminOrders = document.getElementById('tab-admin-orders');
 
         const secAdminUsers = document.getElementById('section-admin-users');
-        const secAdminNewAdmin = document.getElementById('section-admin-new-admin');
         const secAdminProducts = document.getElementById('section-admin-products');
         const secAdminCodes = document.getElementById('section-admin-codes');
         const secAdminOrders = document.getElementById('section-admin-orders');
 
-        function switchAdminTab(activeTab, activeSec) {
-            [tabAdminUsers, tabAdminNewAdmin, tabAdminProducts, tabAdminCodes, tabAdminOrders].forEach(t => t.classList.remove('active'));
-            [secAdminUsers, secAdminNewAdmin, secAdminProducts, secAdminCodes, secAdminOrders].forEach(s => s.style.display = 'none');
-            
-            activeTab.classList.add('active');
-            activeSec.style.display = 'block';
-        }
+        tabAdminUsers.addEventListener('click', () => {
+            tabAdminUsers.classList.add('active');
+            tabAdminProducts.classList.remove('active');
+            tabAdminCodes.classList.remove('active');
+            tabAdminOrders.classList.remove('active');
 
-        tabAdminUsers.addEventListener('click', () => switchAdminTab(tabAdminUsers, secAdminUsers));
-        tabAdminNewAdmin.addEventListener('click', () => switchAdminTab(tabAdminNewAdmin, secAdminNewAdmin));
-        tabAdminProducts.addEventListener('click', () => switchAdminTab(tabAdminProducts, secAdminProducts));
-        tabAdminCodes.addEventListener('click', () => switchAdminTab(tabAdminCodes, secAdminCodes));
-        tabAdminOrders.addEventListener('click', () => switchAdminTab(tabAdminOrders, secAdminOrders));
+            secAdminUsers.style.display = 'block';
+            secAdminProducts.style.display = 'none';
+            secAdminCodes.style.display = 'none';
+            secAdminOrders.style.display = 'none';
+        });
+
+        tabAdminProducts.addEventListener('click', () => {
+            tabAdminProducts.classList.add('active');
+            tabAdminUsers.classList.remove('active');
+            tabAdminCodes.classList.remove('active');
+            tabAdminOrders.classList.remove('active');
+
+            secAdminProducts.style.display = 'block';
+            secAdminUsers.style.display = 'none';
+            secAdminCodes.style.display = 'none';
+            secAdminOrders.style.display = 'none';
+        });
+
+        tabAdminCodes.addEventListener('click', () => {
+            tabAdminCodes.classList.add('active');
+            tabAdminUsers.classList.remove('active');
+            tabAdminProducts.classList.remove('active');
+            tabAdminOrders.classList.remove('active');
+
+            secAdminCodes.style.display = 'block';
+            secAdminUsers.style.display = 'none';
+            secAdminProducts.style.display = 'none';
+            secAdminOrders.style.display = 'none';
+        });
+
+        tabAdminOrders.addEventListener('click', () => {
+            tabAdminOrders.classList.add('active');
+            tabAdminUsers.classList.remove('active');
+            tabAdminProducts.classList.remove('active');
+            tabAdminCodes.classList.remove('active');
+
+            secAdminOrders.style.display = 'block';
+            secAdminUsers.style.display = 'none';
+            secAdminProducts.style.display = 'none';
+            secAdminCodes.style.display = 'none';
+        });
 
         function renderAdminPanel() {
             const userTbody = document.getElementById('admin-user-table-body');
@@ -1433,9 +1364,8 @@
             registeredUsers.forEach((u) => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td>${u.username}</td>
+                    <td>${u.username} ${u.username === 'victory' ? '<span style="color:#00ff88; font-size:0.75rem;">(Admin)</span>' : ''}</td>
                     <td>${u.email}</td>
-                    <td>${u.isAdmin ? '<span style="color:#00ff88; font-weight:bold;">Admin</span>' : '<span style="color:var(--text-secondary);">User ทั่วไป</span>'}</td>
                     <td><b style="color:#00ff88;">${(u.balance || 0).toLocaleString()} ฿</b></td>
                     <td>
                         <button class="action-btn-sm btn-manage-money" onclick="openAdminMoneyModal('${u.username}')">
@@ -1445,34 +1375,6 @@
                     </td>
                 `;
                 userTbody.appendChild(tr);
-            });
-
-            // Render New Admin Section & List
-            const selectNewAdmin = document.getElementById('select-new-admin-user');
-            selectNewAdmin.innerHTML = '<option value="">-- เลือกผู้ใช้งาน --</option>';
-            registeredUsers.filter(u => !u.isAdmin).forEach(u => {
-                const opt = document.createElement('option');
-                opt.value = u.username;
-                opt.textContent = `${u.username} (${u.email})`;
-                selectNewAdmin.appendChild(opt);
-            });
-
-            const adminListTbody = document.getElementById('admin-admin-table-body');
-            adminListTbody.innerHTML = '';
-            registeredUsers.filter(u => u.isAdmin).forEach(u => {
-                const isDefaultVictory = u.username.toLowerCase() === 'victory';
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td><b>${u.username}</b> ${isDefaultVictory ? '<span style="color:#00ff88; font-size:0.75rem;">(Owner / เริ่มต้น)</span>' : ''}</td>
-                    <td>${u.email}</td>
-                    <td><span style="color:#00ff88;">ผู้ดูแลระบบ (Admin)</span></td>
-                    <td>
-                        ${isDefaultVictory ? '<span style="color:var(--text-secondary); font-size:0.85rem;">ระบบหลัก (ไม่สามารถลบได้)</span>' : `
-                            <button class="action-btn-sm btn-delete" onclick="removeAdminRole('${u.username}')">ถอนสิทธิ์ Admin</button>
-                        `}
-                    </td>
-                `;
-                adminListTbody.appendChild(tr);
             });
 
             const prodTbody = document.getElementById('admin-product-table-body');
@@ -1525,40 +1427,6 @@
             });
         }
 
-        // Form Add New Admin
-        document.getElementById('form-add-admin').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const usernameToAdmin = document.getElementById('select-new-admin-user').value;
-            if(!usernameToAdmin) {
-                showStatusAlert('กรุณาเลือกผู้ใช้', 'โปรดเลือกบัญชีผู้ใช้ที่ต้องการเพิ่มเป็น Admin', true);
-                return;
-            }
-
-            const userObj = registeredUsers.find(u => u.username === usernameToAdmin);
-            if(userObj) {
-                userObj.isAdmin = true;
-                saveUserData();
-                renderAdminPanel();
-                showStatusAlert('เพิ่ม Admin สำเร็จ!', `กำหนดสิทธิ์ผู้ดูแลระบบให้กับคุณ "${username_to_admin = usernameToAdmin}" เรียบร้อยแล้ว`);
-            }
-        });
-
-        window.removeAdminRole = function(username) {
-            if(username.toLowerCase() === 'victory') {
-                showStatusAlert('ไม่สามารถทำรายการได้', 'ไม่สามารถถอนสิทธิ์บัญชีเริ่มต้นได้', true);
-                return;
-            }
-            showCustomConfirm('ยืนยันการถอนสิทธิ์', `คุณต้องการถอนสิทธิ์ Admin ของผู้ใช้ ${username} หรือไม่?`, () => {
-                const userObj = registeredUsers.find(u => u.username === username);
-                if(userObj) {
-                    userObj.isAdmin = false;
-                    saveUserData();
-                    renderAdminPanel();
-                    showStatusAlert('ถอนสิทธิ์สำเร็จ', `ทำการถอนสิทธิ์ผู้ดูแลระบบของ ${username} แล้ว`);
-                }
-            });
-        };
-
         const addCodeType = document.getElementById('add-code-type');
         const lblCodeValue = document.getElementById('lbl-code-value');
         const addCodeValue = document.getElementById('add-code-value');
@@ -1602,26 +1470,26 @@
             };
 
             redeemCodes.push(newCode);
-            saveUserData();
+            renderAdminPanel();
 
             document.getElementById('form-add-code').reset();
             showStatusAlert('สร้างโค้ดสำเร็จ!', `เพิ่มโค้ด "${code}" เข้าระบบเรียบร้อยแล้ว`);
         });
 
         window.deleteCode = function(id) {
-            showCustomConfirm('ยืนยันการลบ', 'คุณต้องการลบโค้ดนี้ใช่หรือไม่?', () => {
+            if (confirm('คุณต้องการลบโค้ดนี้ใช่หรือไม่?')) {
                 redeemCodes = redeemCodes.filter(c => c.id !== id);
-                saveUserData();
+                renderAdminPanel();
                 showStatusAlert('ลบโค้ดสำเร็จ', 'ทำการลบโค้ดออกจากระบบแล้ว');
-            });
+            }
         };
 
         document.getElementById('btn-clear-codes').addEventListener('click', () => {
-            showCustomConfirm('ยืนยันการลบทั้งหมด', 'คุณต้องการลบโค้ดทั้งหมดจริงหรือไม่?', () => {
+            if (confirm('คุณต้องการลบโค้ดทั้งหมดจริงหรือไม่?')) {
                 redeemCodes = [];
-                saveUserData();
+                renderAdminPanel();
                 showStatusAlert('เคลียร์โค้ดสำเร็จ', 'ลบโค้ดทั้งหมดเรียบร้อยแล้ว');
-            });
+            }
         });
 
         const multiProductContainer = document.getElementById('multi-product-container');
@@ -1666,13 +1534,12 @@
                 <div class="form-group" style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 10px; border: 1px solid var(--border-color);">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
                         <label style="font-weight: 800; color: #00d2ff; margin-bottom:0;">
-                            <i class="fa-solid fa-tags"></i> กำหนดตัวเลือกแพ็กเกจ & ราคา & รายการสต็อกสินค้า (1 บรรทัดต่อ 1 ชิ้น)
+                            <i class="fa-solid fa-tags"></i> กำหนดตัวเลือกแพ็กเกจ & ราคา & รายการสต็อกสินค้า
                         </label>
                         <button type="button" class="btn-confirm btn-add-plan-field" style="width: auto; padding: 6px 14px; font-size: 0.8rem; background: #00d2ff; color: #000;">
                             <i class="fa-solid fa-plus"></i> เพิ่มตัวเลือกราคา
                         </button>
                     </div>
-                    
                     <div class="admin-plans-container"></div>
                 </div>
             `;
@@ -1699,7 +1566,8 @@
             const btnAddPlan = card.querySelector('.btn-add-plan-field');
 
             btnAddPlan.addEventListener('click', () => addPlanInputRowTo(plansContainer));
-            addPlanInputRowTo(plansContainer, '1 วัน', '150', '');
+            addPlanInputRowTo(plansContainer, '1 วัน', '150', 'VIC-1DAY-KEY-1\nVIC-1DAY-KEY-2');
+            addPlanInputRowTo(plansContainer, 'ถาวร (Lifetime)', '1000', 'VIC-LIFETIME-KEY-1');
 
             multiProductContainer.appendChild(card);
             renderCategories();
@@ -1719,7 +1587,7 @@
                 if(container.querySelectorAll('.admin-plan-row').length > 1) {
                     row.remove();
                 } else {
-                    showStatusAlert('แจ้งเตือน', 'ต้องมีแพ็กเกจราคาอย่างน้อย 1 ตัวเลือก', true);
+                    alert('ต้องมีแพ็กเกจราคาอย่างน้อย 1 ตัวเลือก');
                 }
             });
 
@@ -1728,7 +1596,7 @@
 
         function removeProductEntry(entryId) {
             if(multiProductContainer.querySelectorAll('.product-entry-card').length <= 1) {
-                showStatusAlert('แจ้งเตือน', 'ต้องมีแบบฟอร์มอย่างน้อย 1 รายการ', true);
+                alert('ต้องมีแบบฟอร์มอย่างน้อย 1 รายการ');
                 return;
             }
             const card = multiProductContainer.querySelector(`[data-entry-id="${entryId}"]`);
@@ -1737,18 +1605,10 @@
 
         function initMultiProductForm() {
             multiProductContainer.innerHTML = '';
-            if (categories.length > 0) {
-                createProductEntryHtml();
-            } else {
-                multiProductContainer.innerHTML = '<p style="color:var(--text-secondary); text-align:center; padding:15px;">กรุณาสร้างหมวดหมู่สินค้าด้านบนก่อนทำการเพิ่มสินค้า</p>';
-            }
+            createProductEntryHtml();
         }
 
         btnAddMoreProductEntry.addEventListener('click', () => {
-            if(categories.length === 0) {
-                showStatusAlert('แจ้งเตือน', 'กรุณาสร้างหมวดหมู่สินค้าก่อนเพิ่มสินค้า', true);
-                return;
-            }
             createProductEntryHtml();
         });
 
@@ -1797,9 +1657,9 @@
             });
 
             if (addedCount > 0) {
-                saveUserData();
                 renderProducts();
                 initMultiProductForm();
+                renderAdminPanel();
                 showStatusAlert('เพิ่มสินค้าสำเร็จ!', `เพิ่มสินค้าจำนวน ${addedCount} รายการ เข้าร้านค้าเรียบร้อยแล้ว`);
             } else {
                 showStatusAlert('ข้อผิดพลาด', 'กรุณากรอกข้อมูลสินค้าให้ถูกต้องครบถ้วน', true);
@@ -1896,8 +1756,8 @@
                 storeProducts[index].img = editingProductImageBase64;
             }
 
-            saveUserData();
             renderProducts();
+            renderAdminPanel();
             editProductModal.style.display = 'none';
             showStatusAlert('แก้ไขสำเร็จ!', `อัปเดตข้อมูลสินค้า "${title}" เรียบร้อยแล้ว`);
         });
@@ -1929,11 +1789,12 @@
 
                 if (currentUser && currentUser.username === selectedUserForMoney) {
                     currentUser.balance = user.balance;
+                    updateUIState();
                 }
 
-                saveUserData();
+                renderAdminPanel();
                 adminMoneyModal.style.display = 'none';
-                showStatusAlert('ปรับปรุงเงินสำเร็จ', `ทำรายการ ${action === 'add' ? 'เพิ่มเงิน' : 'หักเงิน'} ${amount.toLocaleString()} บาท ให้คุณ ${selectedUserForMoney} เรียบร้อยแล้ว`);
+                showStatusAlert('ปรับปรุงเงินสำเร็จ', `ทำรายการเรียบร้อยแล้ว`);
             }
         });
 
@@ -1951,136 +1812,137 @@
             }
 
             categories.push({ id: catId, name: catName, icon: 'fa-folder' });
-            saveUserData();
             renderCategories();
-            initMultiProductForm();
             document.getElementById('add-cat-name').value = '';
             showStatusAlert('สร้างหมวดหมู่สำเร็จ', `เพิ่มหมวดหมู่ "${catName}" เข้าระบบเรียบร้อยแล้ว`);
         });
 
         window.deleteCategory = function(catId) {
-            showCustomConfirm('ยืนยันการลบ', 'คุณต้องการลบหมวดหมู่นี้ใช่หรือไม่?', () => {
+            if (confirm('คุณต้องการลบหมวดหมู่นี้ใช่หรือไม่?')) {
                 categories = categories.filter(c => c.id !== catId);
-                saveUserData();
                 renderCategories();
-                initMultiProductForm();
                 showStatusAlert('ลบหมวดหมู่สำเร็จ', 'ทำการลบหมวดหมู่ออกจากระบบแล้ว');
-            });
+            }
         };
 
         window.deleteUser = function(username) {
-            if(username.toLowerCase() === 'victory') {
-                showStatusAlert('ไม่สามารถลบได้', 'บัญชีหลัก victory ไม่สามารถลบได้', true);
-                return;
-            }
-            showCustomConfirm('ยืนยันการลบผู้ใช้', `คุณต้องการลบบัญชีผู้ใช้ ${username} หรือไม่?`, () => {
+            if (confirm(`คุณต้องการลบบัญชีผู้ใช้ ${username} หรือไม่?`)) {
                 registeredUsers = registeredUsers.filter(u => u.username !== username);
                 if (currentUser && currentUser.username === username) {
                     currentUser = null;
-                    localStorage.removeItem('victory_active_user');
+                    updateUIState();
                 }
-                saveUserData();
+                renderAdminPanel();
                 showStatusAlert('ลบผู้ใช้สำเร็จ', `ลบบัญชี ${username} ออกจากระบบแล้ว`);
-            });
+            }
         };
 
         window.deleteProduct = function(id) {
-            showCustomConfirm('ยืนยันการลบสินค้า', 'คุณต้องการลบสินค้านี้ใช่หรือไม่?', () => {
+            if (confirm('คุณต้องการลบสินค้านี้ใช่หรือไม่?')) {
                 storeProducts = storeProducts.filter(p => p.id !== id);
-                saveUserData();
                 renderProducts();
+                renderAdminPanel();
                 showStatusAlert('ลบสินค้าสำเร็จ', 'ทำการลบสินค้าออกจากหน้าร้านเรียบร้อยแล้ว');
-            });
+            }
         };
 
         document.getElementById('btn-clear-users').addEventListener('click', () => {
-            showCustomConfirm('คำเตือนระดับสูง', 'คุณต้องการลบผู้ใช้ทั้งหมด (ยกเว้น Admin หลัก) จริงหรือไม่?', () => {
-                registeredUsers = registeredUsers.filter(u => u.isAdmin || u.username.toLowerCase() === 'victory');
-                saveUserData();
-                showStatusAlert('เคลียร์ผู้ใช้สำเร็จ', 'ลบผู้ใช้ทั่วไปทั้งหมดเรียบร้อยแล้ว');
-            });
+            if (confirm('คำเตือน: คุณต้องการลบ Log และผู้ใช้ทั้งหมดจริงหรือไม่?')) {
+                registeredUsers = [];
+                currentUser = null;
+                updateUIState();
+                renderAdminPanel();
+                showStatusAlert('เคลียร์ Log ผู้ใช้สำเร็จ', 'ลบผู้ใช้ทั้งหมดออกจากระบบแล้ว');
+            }
         });
 
         document.getElementById('btn-clear-products').addEventListener('click', () => {
-            showCustomConfirm('ยืนยันการลบทั้งหมด', 'คุณต้องการลบสินค้าทั้งหมดออกจากร้านค้าใช่หรือไม่?', () => {
+            if (confirm('คำเตือน: คุณต้องการลบสินค้าทั้งหมดใช่หรือไม่?')) {
                 storeProducts = [];
-                saveUserData();
                 renderProducts();
-                showStatusAlert('เคลียร์สินค้าสำเร็จ', 'ลบสินค้าทั้งหมดเรียบร้อยแล้ว');
-            });
+                renderAdminPanel();
+                showStatusAlert('เคลียร์สินค้าสำเร็จ', 'ลบสินค้าทั้งหมดในร้านแล้ว');
+            }
         });
 
         document.getElementById('btn-clear-orders').addEventListener('click', () => {
-            showCustomConfirm('ยืนยันการลบ', 'คุณต้องการลบประวัติการสั่งซื้อทั้งหมดใช่หรือไม่?', () => {
+            if (confirm('คุณต้องการเคลียร์ Log การสั่งซื้อทั้งหมดหรือไม่?')) {
                 purchaseLogs = [];
-                saveUserData();
                 renderAdminPanel();
-                showStatusAlert('เคลียร์ Log สำเร็จ', 'ลบประวัติการสั่งซื้อทั้งหมดเรียบร้อยแล้ว');
-            });
+                showStatusAlert('เคลียร์ Log สำเร็จ', 'ลบข้อมูลประวัติการสั่งซื้อเรียบร้อยแล้ว');
+            }
         });
 
-        // --- PURCHASE & TOPUP MODAL FLOW ---
-        document.getElementById('nav-topup').addEventListener('click', () => topupModal.style.display = 'flex');
-        document.getElementById('nav-redeem').addEventListener('click', () => redeemModal.style.display = 'flex');
+        const navHome = document.getElementById('nav-home');
+        const navTopup = document.getElementById('nav-topup');
+        const navRedeem = document.getElementById('nav-redeem');
 
-        document.getElementById('btn-process-topup').addEventListener('click', () => {
-            const amount = parseFloat(document.getElementById('topup-amount-input').value) || 500;
+        navHome.addEventListener('click', () => {
+            adminView.style.display = 'none';
+            productDetailView.style.display = 'none';
+            heroSection.style.display = 'block';
+            storeFrontView.style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        navTopup.addEventListener('click', () => {
             if (!currentUser) {
-                showStatusAlert('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบก่อนทำการเติมเงิน', true);
-                topupModal.style.display = 'none';
                 authModal.style.display = 'flex';
                 return;
             }
+            topupModal.style.display = 'flex';
+        });
 
-            currentUser.balance += amount;
-            saveUserData();
-            topupModal.style.display = 'none';
-            showStatusAlert('เติมเงินสำเร็จ (ทดลอง)', `ระบบได้เติมเงินจำนวน ${amount.toLocaleString()} บาท เข้าสู่บัญชีของคุณแล้ว`);
+        navRedeem.addEventListener('click', () => {
+            if (!currentUser) {
+                authModal.style.display = 'flex';
+                return;
+            }
+            document.getElementById('redeem-code-input').value = '';
+            redeemModal.style.display = 'flex';
         });
 
         document.getElementById('btn-process-redeem').addEventListener('click', () => {
-            const codeInput = document.getElementById('redeem-code-input').value.trim().toUpperCase();
             if (!currentUser) {
-                showStatusAlert('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบก่อนกรอกโค้ด', true);
-                redeemModal.style.display = 'none';
                 authModal.style.display = 'flex';
                 return;
             }
 
-            const foundCode = redeemCodes.find(c => c.code === codeInput);
+            const inputCode = document.getElementById('redeem-code-input').value.trim().toUpperCase();
+            if (!inputCode) {
+                showStatusAlert('กรุณากรอกโค้ด!', 'โปรดระบุโค้ดก่อนทำการยืนยัน', true);
+                return;
+            }
+
+            const foundCode = redeemCodes.find(c => c.code === inputCode);
+
             if (!foundCode) {
-                showStatusAlert('โค้ดไม่ถูกต้อง', 'ไม่พบโค้ดนี้ในระบบ หรืออาจหมดอายุไปแล้ว', true);
+                showStatusAlert('ไม่พบโค้ดนี้!', 'โค้ดที่คุณกรอกไม่ถูกต้องหรือไม่มีในระบบ', true);
                 return;
             }
 
             if (foundCode.usedCount >= foundCode.limit) {
-                showStatusAlert('โค้ดเต็มแล้ว', 'โค้ดนี้ถูกใช้งานครบตามจำนวนสิทธิ์ที่กำหนดแล้ว', true);
+                showStatusAlert('สิทธิ์เต็มแล้ว!', 'โค้ดนี้ถูกใช้งานครบตามจำนวนสิทธิ์แล้ว', true);
                 return;
             }
 
-            if (foundCode.usedBy && foundCode.usedBy.includes(currentUser.username)) {
-                showStatusAlert('คุณใช้โค้ดนี้ไปแล้ว', 'บัญชีของคุณเคยกรอกรับสิทธิ์จากโค้ดนี้ไปแล้ว', true);
+            if (foundCode.usedBy.includes(currentUser.username)) {
+                showStatusAlert('คุณใช้โค้ดนี้ไปแล้ว!', 'บัญชีของคุณเคยใช้โค้ดนี้ไปแล้ว ไม่สามารถรับซ้ำได้', true);
                 return;
             }
 
-            if (!foundCode.usedBy) foundCode.usedBy = [];
+            foundCode.usedCount += 1;
             foundCode.usedBy.push(currentUser.username);
-            foundCode.usedCount++;
+            redeemModal.style.display = 'none';
 
             if (foundCode.type === 'balance') {
                 const addVal = parseFloat(foundCode.value) || 0;
                 currentUser.balance += addVal;
-                saveUserData();
-                redeemModal.style.display = 'none';
-                document.getElementById('redeem-code-input').value = '';
-                showStatusAlert('กรอกโค้ดสำเร็จ!', `คุณได้รับเครดิตจำนวน ${addVal.toLocaleString()} บาท เข้าบัญชีแล้ว`);
+                updateUIState();
+                showStatusAlert('แลกรับโค้ดสำเร็จ!', `ได้รับเครดิตเงินจำนวน ฿${addVal} เรียบร้อยแล้ว`);
             } else {
-                saveUserData();
-                redeemModal.style.display = 'none';
-                document.getElementById('redeem-code-input').value = '';
-                
-                successProductName.textContent = `รับรางวัลจากโค้ด: ${foundCode.code}`;
-                successPlanName.textContent = 'คีย์สคริปต์พิเศษ';
+                successProductName.textContent = 'โค้ดรับรางวัลพิเศษ';
+                successPlanName.textContent = foundCode.code;
                 licenseKeyDisplay.textContent = foundCode.value;
                 successModal.style.display = 'flex';
             }
@@ -2088,19 +1950,18 @@
 
         btnSubmitBuy.addEventListener('click', () => {
             if (!currentUser) {
-                showStatusAlert('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบก่อนทำรายการสั่งซื้อ', true);
                 authModal.style.display = 'flex';
                 return;
             }
-
-            if (selectedPlanIndex === -1 || !currentActiveProduct) {
-                showStatusAlert('กรุณาเลือกแพ็กเกจ', 'โปรดเลือกแพ็กเกจระยะเวลาการใช้งานก่อนสั่งซื้อ', true);
+            if (!currentActiveProduct || selectedPlanIndex === -1) {
+                showStatusAlert('กรุณาเลือกแพ็กเกจ!', 'เลือกแพ็กเกจที่คุณต้องการซื้อก่อนกดสั่งซื้อ', true);
                 return;
             }
 
+            const currentPlan = currentActiveProduct.plans[selectedPlanIndex];
             modalProductName.textContent = currentActiveProduct.title;
-            modalPlanName.textContent = selectedPlanName;
-            modalPlanPrice.textContent = `฿${selectedPrice.toLocaleString()}`;
+            modalPlanName.textContent = currentPlan.name;
+            modalPlanPrice.textContent = `฿${currentPlan.price.toLocaleString()}`;
             buyModal.style.display = 'flex';
         });
 
@@ -2113,60 +1974,74 @@
         });
 
         btnProceedPayment.addEventListener('click', () => {
-            buyModal.style.display = 'none';
+            const currentPlan = currentActiveProduct.plans[selectedPlanIndex];
 
             if (selectedPaymentMethod === 'balance') {
-                if (currentUser.balance < selectedPrice) {
-                    document.getElementById('insufficient-msg-main').textContent = `ยอดเงินของคุณมี ฿${currentUser.balance.toLocaleString()} แต่ต้องใช้ ฿${selectedPrice.toLocaleString()}`;
-                    insufficientBalanceModal.style.display = 'flex';
+                if (currentUser.balance < currentPlan.price) {
+                    buyModal.style.display = 'none';
+                    document.getElementById('insufficient-msg-main').textContent = `ยอดเงินของคุณมี ฿${currentUser.balance.toLocaleString()} แต่สินค้าราคา ฿${currentPlan.price.toLocaleString()}`;
+                    document.getElementById('insufficientBalanceModal').style.display = 'flex';
                     return;
                 }
 
-                currentUser.balance -= selectedPrice;
-                processSuccessfulPurchase();
+                currentUser.balance -= currentPlan.price;
+                updateUIState();
+                buyModal.style.display = 'none';
+                processSuccessfulPurchase(currentActiveProduct, currentPlan);
             } else {
-                qrModalPrice.textContent = `฿${selectedPrice.toLocaleString()}`;
+                buyModal.style.display = 'none';
+                qrModalPrice.textContent = `฿${currentPlan.price.toLocaleString()}`;
                 qrModal.style.display = 'flex';
             }
         });
 
         document.getElementById('btn-go-topup').addEventListener('click', () => {
-            insufficientBalanceModal.style.display = 'none';
+            document.getElementById('insufficientBalanceModal').style.display = 'none';
             topupModal.style.display = 'flex';
+        });
+
+        document.getElementById('btn-process-topup').addEventListener('click', () => {
+            const addAmount = parseFloat(document.getElementById('topup-amount-input').value);
+            if (isNaN(addAmount) || addAmount <= 0) {
+                showStatusAlert('ข้อผิดพลาด', 'กรุณากรอกจำนวนเงินให้ถูกต้อง', true);
+                return;
+            }
+            currentUser.balance += addAmount;
+            updateUIState();
+            topupModal.style.display = 'none';
+            showStatusAlert('เติมเงินสำเร็จ (ทดลอง)', `เติมเงินเข้าบัญชีเรียบร้อยแล้ว ฿${addAmount.toLocaleString()}`);
         });
 
         btnFinishPayment.addEventListener('click', () => {
             qrModal.style.display = 'none';
-            processSuccessfulPurchase();
+            const currentPlan = currentActiveProduct.plans[selectedPlanIndex];
+            processSuccessfulPurchase(currentActiveProduct, currentPlan);
         });
 
-        function processSuccessfulPurchase() {
-            if (!currentActiveProduct) return;
-
-            const targetPlan = currentActiveProduct.plans[selectedPlanIndex];
-            let grantedKey = "VICTORY-VIP-DEFAULT-KEY-9999";
-
-            if (targetPlan && Array.isArray(targetPlan.stock) && targetPlan.stock.length > 0) {
-                grantedKey = targetPlan.stock.shift();
+        function processSuccessfulPurchase(product, plan) {
+            let assignedKey = 'VICTORY-SUCCESS-KEY-DEFAULT';
+            if (Array.isArray(plan.stock) && plan.stock.length > 0) {
+                assignedKey = plan.stock.shift();
             }
 
-            const nowStr = new Date().toLocaleString('th-TH');
-            const newOrder = {
-                time: nowStr,
-                username: currentUser.username,
-                title: currentActiveProduct.title,
-                plan: selectedPlanName,
-                price: selectedPrice
-            };
-
-            purchaseLogs.push(newOrder);
-            saveUserData();
-            renderProducts();
-
-            successProductName.textContent = currentActiveProduct.title;
-            successPlanName.textContent = selectedPlanName;
-            licenseKeyDisplay.textContent = grantedKey;
+            successProductName.textContent = product.title;
+            successPlanName.textContent = plan.name;
+            licenseKeyDisplay.textContent = assignedKey;
             successModal.style.display = 'flex';
+
+            const now = new Date();
+            const timeStr = now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
+
+            purchaseLogs.unshift({
+                time: timeStr,
+                username: currentUser.username,
+                title: product.title,
+                plan: plan.name,
+                price: plan.price
+            });
+
+            renderProducts();
+            openProductDetail(product);
         }
 
         document.getElementById('btn-copy-license').addEventListener('click', () => {
@@ -2179,8 +2054,11 @@
             });
         });
 
-        // Initial Load
-        loadUserData();
+        licenseKeyDisplay.addEventListener('click', () => {
+            document.getElementById('btn-copy-license').click();
+        });
+
+        window.onload = initApp;
     </script>
 </body>
 </html>
